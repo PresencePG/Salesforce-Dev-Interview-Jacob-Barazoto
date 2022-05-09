@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Suggestion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Suggestions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Category for this suggestion. --></help>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Fun</masterLabel>
+            <translation><!-- Fun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interviewing</masterLabel>
+            <translation><!-- Interviewing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The details of the suggestion/feedback. --></help>
+        <label><!-- Details --></label>
+        <name>Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email the person would like be to contacted at. --></help>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- The phone number the user would like to be contacted at regarding this suggestion. --></help>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- A title for this suggestion/feedback. --></help>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

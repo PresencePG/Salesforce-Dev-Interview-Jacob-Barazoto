@@ -1,0 +1,37 @@
+<template>
+    <template if:true={isProcessing}>
+        <lightning-spinner variant="base"></lightning-spinner>
+    </template>
+    <div class="slds-m-bottom_small">
+        <lightning-card title="Contact Info" variant="base">
+            <div class="slds-p-around_small">
+                <p>Include your contact info if you'd allow us to reach out in order to better implement your suggestion.</p>
+                <div class="slds-form-element slds-m-vertical_small">
+                    <lightning-input type="tel" label="Phone" placeholder="XXX-XXX-XXXX" value={suggestion.Phone__c} name="Phone__c" onchange={onFieldChange}></lightning-input>
+                </div>
+                <div class="slds-form-element">
+                    <lightning-input type="email" label="Email" placeholder="Email" value={suggestion.Email__c} name="Email__c" onchange={onFieldChange}></lightning-input>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+    <div class="slds-m-bottom_small">
+        <lightning-card title="Suggestion" variant="base">
+            <div class="slds-p-around_small">
+                <div class="slds-form-element slds-m-top_small">
+                    <lightning-input type="text" label="Title" placeholder="Title" value={suggestion.Title__c} name="Title__c" onchange={onFieldChange}></lightning-input>
+                </div>
+                <div class="slds-form-element slds-m-top_small">
+                    <lightning-input type="text" label="Category" placeholder="(e.g. Work, Fun, Interviewing, Other)" value={suggestion.Category__c} name="Category__c" onchange={onFieldChange}></lightning-input>
+                </div>
+                <div class="slds-form-element slds-m-top_small">
+                    <lightning-textarea label="Details" placeholder="Enter details about your suggestion/feedback." name="Details__c" value={suggestion.Details__c} onchange={onFieldChange}></lightning-textarea>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+    <div class="slds-align_absolute-center">
+        <div class="slds-m-right_large"><lightning-button label="Cancel" variant="destructive" onclick={resetForm}></lightning-button></div>
+        <div><lightning-button label="Save" onclick={saveSuggestion}></lightning-button></div>
+    </div>
+</template>
